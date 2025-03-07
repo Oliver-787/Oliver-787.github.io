@@ -1,0 +1,296 @@
+/* Universal */
+
+    /* Colors */
+
+    :root {
+        --background: #faf2fb;
+        --text: #69200cda;
+        --highlight: #E9C3E6;
+    }
+
+    body {
+        background-color: var(--background);
+    }
+
+    p, .navigationLinks, footer a, caption, tr, #email, .navigation, .footer, 
+    #error, label, #videoReaction {
+        font-family: system-ui;
+        color: var(--text);
+        font-size: larger;
+        text-align: center;
+    }
+
+    .title {
+        font-family: system-ui;
+        color: var(--text);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .navigation, footer {
+        text-align: center;
+    }
+
+    .navigationLinks:hover, footer a:hover{
+        background-color: var(--highlight);
+    }
+
+    .title span {
+        background-color: var(--highlight);
+    }
+
+
+    .images, #socialComputingWork {
+        border: .5rem outset var(--highlight);
+        margin: 2rem;
+        padding: auto;
+    }
+
+    [controls] {
+        border: .5rem groove var(--highlight);
+    }
+
+
+/* index.html */
+    #mainPageContent {
+        display: flex;
+        justify-content: center;
+        gap: 4rem; 
+    }
+
+    .textIndex{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border: 0.3rem solid var(--highlight);
+        text-align: center;
+    }
+
+    #greetings{
+        font-size: 2.5rem;
+    }
+
+    /* Color Button Styles */
+    #colorButtonsDiv {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #colorBtnContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #colorBtnContainer div {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #colorBtnGreen {
+        background-color: #d3fbe0; 
+        color: #623a93; 
+        border: 4px solid #90C290;
+        padding: .25rem 1rem;
+        margin: .1rem 2rem;
+
+        font-size: medium;
+        font-family: system-ui;
+        cursor: pointer;
+    }
+    #colorBtnGreen:hover {
+        background-color: #90C290;
+    }
+
+    #colorBtnBlue {
+        background-color: #153243; 
+        color: #F4F9E9; 
+        border: 4px solid #18557d;
+        padding: .25rem 1rem;
+        margin: .1rem 2rem;
+
+        font-size: medium;
+        font-family: system-ui;
+        cursor: pointer;
+    }
+    #colorBtnBlue:hover {
+        background-color: #18557d;
+    }
+
+    #colorBtnRegular {
+        background-color: #faf2fb; 
+        color: #69200cda; 
+        border: 4px solid #E9C3E6;
+        padding: .25rem 1rem;
+        margin: .1rem 2rem;
+
+        font-size: medium;
+        font-family: system-ui;
+        cursor: pointer;
+    }
+    #colorBtnRegular:hover {
+        background-color: #E9C3E6;
+    }
+
+
+/* about.html */
+    #gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 200px 1fr;
+        grid-gap: 10px 0px;
+    }
+    #aboutIntroText {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2; 
+        grid-column-end: 2;
+    }
+    #musicText {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1; 
+        grid-column-end: 1;
+    }
+    #guitarAudio {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2; 
+        grid-column-end: 2;
+        margin-left: 9rem;
+    }
+    #catIntro {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 2; 
+        grid-column-end: 2;
+    }
+    #petList {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1; 
+        grid-column-end: 1;
+    }
+
+    ol > li {
+        font-weight: 700;
+    }
+
+    ul ~ li {
+        font-weight: 500;
+    }
+
+    ol {
+        border: 0.3rem solid var(--highlight);
+        margin: auto;
+        font-family: system-ui;
+        color: var(--text);
+        font-size: larger;
+    }
+
+    #videoReaction {
+        font-size: 2rem;
+    }
+
+/* future.html */
+    #futureGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 320px 430px 400px;
+        grid-gap: 10px 0px;
+    }
+    #pongVideo {
+        grid-area: 1 / 2 / 1 / 2;
+        margin-left: 11rem;
+    }
+    #introToVRFields {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+    #listOfIndustries {
+        border: 0.3rem solid var(--highlight);
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    #listOfIndustries > li {
+        font-family: system-ui;
+        color: var(--text);
+        font-size: larger;
+    }
+
+    #videoIntro {
+        grid-area: 3 / 1 / 3 / 1;
+    }
+    #youtubeVideo {
+        grid-area: 3 / 2 / 3 / 2;
+        margin-left: 6rem;
+    }
+    #socialComputingWorkIntro {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+    #socialComputingWork {
+        grid-area: 4 / 2 / 4 / 2;
+        margin-left: 6rem;
+    }
+
+    td {
+        padding: 1rem;
+    }
+
+    th span {
+        background-color: var(--highlight);
+    }
+
+    li + p {
+        text-align: left;
+    }
+
+    /* Form Styles */
+    #formContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #formItself {
+        border: 0.3rem solid var(--highlight);
+        padding: 1rem 2rem;
+        width: 25rem;
+    }
+
+    #submitButton {
+        background-color: var(--background); 
+        color: var(--text); 
+        border: 4px solid var(--highlight);
+        padding: .25rem rem;
+
+        font-size: 1rem;
+        font-family: system-ui;
+        cursor: pointer;
+    }
+    #submitButton:hover {
+        background-color: var(--highlight);
+    }
+
+    .error {
+        font-family: system-ui;
+        color: var(--text);
+    }
+
+    #email {
+        text-align: left;
+        color: black;
+        font-size: 1rem;
+    }
+
+    #success {
+        font-family: system-ui;
+        font-size: 2rem;
+        color: var(--text);
+        text-align: right;
+    }
+
+    
+
+    
+
